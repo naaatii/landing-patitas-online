@@ -46,15 +46,7 @@ const Home = () =>{
     return(
         <div className="containerHome">
             <h1>Home</h1>
-            <Slider {...settings}>
-                {fotos.map((foto) => {
-                    return(
-                        <div>
-                            <img width="100%" src={foto.url}/>
-                        </div>
-                    )
-                })}
-            </Slider>
+            
         </div>
     );
 }
