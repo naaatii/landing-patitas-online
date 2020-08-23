@@ -1,6 +1,9 @@
 import React from 'react'
 import {Container} from './styled'
 import {Link,withRouter} from 'react-router-dom'
+import Facebook from '../../assets/facebook.png'
+import Instagram from '../../assets/instagram.png'
+import Youtube from '../../assets/youtube.png'
 
 import logo from '../../assets/patitas-logo.png'
 
@@ -15,7 +18,17 @@ const NavBar = () => {
             </div>
             
             <div className = 'redes'>
-                <p>Seguinos en nuestras redes</p>
+                <div id="contenedorSeguinos">
+                    <p>Seguinos en nuestras redes</p>
+                </div>
+               
+               <div id="contenedorUl">
+                    <ul>
+                        <li><a href="www.fabebook.com" target="blank"><img src={Facebook}></img></a></li>
+                        <li><a href="www.instagram.com" target="blank"> <img src={Instagram}></img></a></li>
+                        <li><a href="www.youtube.com" target="blank"><img src={Youtube}></img></a></li>
+                    </ul>
+                </div>
             </div>
         </Container>
     )
