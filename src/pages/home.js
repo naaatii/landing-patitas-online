@@ -1,15 +1,15 @@
 import React, { Component } from "react";
+import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
-import Slider from "react-slick";
 import cero from '../assets/0.png'
 import uno from '../assets/1.png'
 import dos from '../assets/2.png'
 import tres from '../assets/3.png'
 import cuatro from '../assets/4.png'
 
- export default class Home extends Component {
-  render() {
+ const Home = () => {
+  //render() {
     const settings = {
       dots: false,
       arrows: true,
@@ -21,6 +21,8 @@ import cuatro from '../assets/4.png'
       slidesToScroll: 1,
       
     };
+      
+    //};
 
     return (
       <div>
@@ -48,5 +50,5 @@ import cuatro from '../assets/4.png'
       </div>
     );
   }
-}
 
+export default Home
